@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Accelerometer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J09-ID-j8p">
+                                <attributedString key="attributedText">
+                                    <fragment content="15.0 ft/s">
+                                        <attributes>
+                                            <font key="NSFont" size="47" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8Y-DG-aMN">
+                                <attributedString key="attributedText">
+                                    <fragment content="15.0 mph">
+                                        <attributes>
+                                            <font key="NSFont" size="68" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rth-MF-pNg">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="hof-eB-IUh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="45"/>
+                                <state key="normal" title="Reset"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J09-ID-j8p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0VU-0z-51Z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rth-MF-pNg" secondAttribute="bottom" priority="750" constant="45" id="55a-ul-CaV"/>
+                            <constraint firstItem="J09-ID-j8p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cno-5B-Dgc"/>
+                            <constraint firstItem="rth-MF-pNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aNX-52-lT3"/>
+                            <constraint firstItem="z8Y-DG-aMN" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="144" id="bWi-9G-9sJ"/>
+                            <constraint firstItem="rth-MF-pNg" firstAttribute="top" secondItem="J09-ID-j8p" secondAttribute="bottom" constant="48" id="cBG-9H-U75"/>
+                            <constraint firstItem="J09-ID-j8p" firstAttribute="top" secondItem="z8Y-DG-aMN" secondAttribute="bottom" constant="32" id="nja-Hg-6ht"/>
+                            <constraint firstItem="rth-MF-pNg" firstAttribute="centerX" secondItem="z8Y-DG-aMN" secondAttribute="centerX" id="sQY-AL-tNs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accelerationLabel" destination="J09-ID-j8p" id="Fyv-Ha-gaa"/>
+                        <outlet property="resetButton" destination="rth-MF-pNg" id="G00-Yu-LeM"/>
+                        <outlet property="speedLabel" destination="z8Y-DG-aMN" id="wJe-GE-nL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="458.32083958020991"/>
+        </scene>
+    </scenes>
+</document>
