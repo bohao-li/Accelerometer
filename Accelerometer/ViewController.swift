@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreMotion
 
 class ViewController: UIViewController {
 
@@ -14,13 +15,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var accelerationLabel: UILabel!
     @IBOutlet weak var resetButton: UIButton!
 
+    let motionManger: MotionManager
+
+    required init(coder aDecoder: NSCoder) {
+        motionManger = MotionManager()
+        super.init(coder: aDecoder)!
+        motionManger.delegate = self
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        motionManger.startMotionManger()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+}
+
+extension ViewController: MotionMangerDelegate {
+    func updateWithSpeedAndAcceleration(speed: Speed, acceleration: CMAcceleration) {
+
+        speedLabel.text = "\(speed.x)"
+        accelerationLabel.text = "\(acceleration.x)"
     }
 }

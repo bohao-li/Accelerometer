@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9B6F2351D14B4E00011A1AF /* MotionManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B6F2341D14B4E00011A1AF /* MotionManger.swift */; };
 		C9CC3F951D1490EE005799E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CC3F941D1490EE005799E1 /* AppDelegate.swift */; };
 		C9CC3F971D1490EE005799E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CC3F961D1490EE005799E1 /* ViewController.swift */; };
 		C9CC3F9A1D1490EE005799E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CC3F981D1490EE005799E1 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9B6F2341D14B4E00011A1AF /* MotionManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManger.swift; sourceTree = "<group>"; };
 		C9CC3F911D1490EE005799E1 /* Accelerometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accelerometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CC3F941D1490EE005799E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9CC3F961D1490EE005799E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				C9CC3FA01D1490EE005799E1 /* LaunchScreen.storyboard */,
 				C9CC3FA31D1490EE005799E1 /* Info.plist */,
 				C9CC3F9B1D1490EE005799E1 /* Accelerometer.xcdatamodeld */,
+				C9B6F2341D14B4E00011A1AF /* MotionManger.swift */,
 			);
 			path = Accelerometer;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9CC3F971D1490EE005799E1 /* ViewController.swift in Sources */,
+				C9B6F2351D14B4E00011A1AF /* MotionManger.swift in Sources */,
 				C9CC3F9D1D1490EE005799E1 /* Accelerometer.xcdatamodeld in Sources */,
 				C9CC3F951D1490EE005799E1 /* AppDelegate.swift in Sources */,
 			);
