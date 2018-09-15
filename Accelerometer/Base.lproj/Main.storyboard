@@ -53,22 +53,33 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="45"/>
                                 <state key="normal" title="Reset"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-pP-P8U">
+                                <rect key="frame" x="121" y="536" width="134" height="74"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.092869963399396127" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="J09-ID-j8p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0VU-0z-51Z"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rth-MF-pNg" secondAttribute="bottom" priority="750" constant="45" id="55a-ul-CaV"/>
+                            <constraint firstItem="f7X-pP-P8U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="105" id="6yW-Vv-ekR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f7X-pP-P8U" secondAttribute="bottom" constant="57" id="8P5-xe-y8R"/>
+                            <constraint firstItem="f7X-pP-P8U" firstAttribute="top" secondItem="rth-MF-pNg" secondAttribute="bottom" constant="46" id="93T-gU-cFq"/>
                             <constraint firstItem="J09-ID-j8p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cno-5B-Dgc"/>
                             <constraint firstItem="rth-MF-pNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aNX-52-lT3"/>
                             <constraint firstItem="z8Y-DG-aMN" firstAttribute="centerX" secondItem="J09-ID-j8p" secondAttribute="centerX" id="b62-3n-bgy"/>
                             <constraint firstItem="z8Y-DG-aMN" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="144" id="bWi-9G-9sJ"/>
                             <constraint firstItem="rth-MF-pNg" firstAttribute="top" secondItem="J09-ID-j8p" secondAttribute="bottom" constant="48" id="cBG-9H-U75"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f7X-pP-P8U" secondAttribute="trailing" constant="104" id="fFS-64-x5O"/>
                             <constraint firstItem="z8Y-DG-aMN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="141" id="kKU-gD-VmZ"/>
                             <constraint firstItem="J09-ID-j8p" firstAttribute="top" secondItem="z8Y-DG-aMN" secondAttribute="bottom" constant="32" id="nja-Hg-6ht"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="accelerationLabel" destination="J09-ID-j8p" id="Fyv-Ha-gaa"/>
+                        <outlet property="pauseButton" destination="f7X-pP-P8U" id="WF3-di-ZDh"/>
                         <outlet property="resetButton" destination="rth-MF-pNg" id="G00-Yu-LeM"/>
                         <outlet property="speedLabel" destination="z8Y-DG-aMN" id="wJe-GE-nL8"/>
                     </connections>
