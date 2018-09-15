@@ -36,7 +36,6 @@ class ViewController: UIViewController {
 
 extension ViewController: MotionMangerDelegate {
     func updateWithSpeedAndAcceleration(speed: Speed, acceleration: CMAcceleration) {
-
         speedLabel.text = "\(speed.x)"
         accelerationLabel.text = "\(acceleration.x)"
     }

@@ -63,7 +63,7 @@ public class MotionManager {
         cmMotionManager.startAccelerometerUpdates(to: internalQueue, withHandler: { data, error in
             if let error = error {
                 // handle error here
-                print("\(error.description)")
+                print("\(error.localizedDescription)")
                 return
             }
 
